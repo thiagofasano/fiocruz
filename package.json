@@ -1,0 +1,24 @@
+{
+  "name": "fiocruz",
+  "version": "1.0.0",
+  "description": "Site institucional da Fiotec",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagofasano/fiocruz.git"
+  },
+  "author": "Thiago Fasano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagofasano/fiocruz/issues"
+  },
+  "homepage": "https://github.com/thiagofasano/fiocruz#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,67 @@
+/* Header */
+.header {
+	background: $cor-branca;
+	height: 150px;
+	position: fixed;
+	width: 100%;
+
+	.container {
+		padding: 35px 20px;
+	}
+}
+
+
+.logo {
+	@include image-replace;
+	background: url("../../images/logo.jpg");
+	width: 200px;
+	height: 72px;
+	position: absolute;
+}
+
+
+.menu-principal {
+	float: left;
+	margin: 15px 0 0 215px;
+
+	li {
+		float: left;
+		list-style: none;
+		padding: 10px 15px;
+
+		a {
+			text-decoration: none;
+		}
+
+	}
+
+	&--quem-somos a:hover {
+		color: $cor-azul; 
+	}
+
+	&--noticias a:hover {
+		color: $cor-vermelho; 
+	}	
+
+	&--projetos a:hover {
+		color: $cor-amarelo; 
+	}
+
+	&--vagas a:hover {
+		color: $cor-azul; 
+	}	
+
+	&--contato a:hover {
+		color: $cor-verde; 
+	}	
+}
+
+
+.icon-busca {
+	@include image-replace;
+	background: url("../../images/icon-busca.jpg");
+	width: 18px;
+	height: 17px;
+	float: right;
+	margin: 15px 25px;
+}
