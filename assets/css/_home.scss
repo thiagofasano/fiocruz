@@ -1,1 +1,149 @@
-/* Home */
+//
+//// Banner Home
+//
+.banner-home {
+	@extend .clearfix;
+	padding-top: 151px;
+
+	&-inner {
+		height: 300px;
+		@include break(desk) {
+		height: 600px;
+		}
+	}
+
+	&-item {
+		background: url("../../images/banner/banner-1.jpg") no-repeat;
+		height: inherit;
+
+		a {
+			font-family: $roboto-bold;
+			font-size: 32px;
+			color: $cor-branca;
+			position: absolute;
+			top: 0;
+			left: 40px;
+			right: 40px;
+			height: 100%;
+			padding-top: 5%;
+
+			@include break(desk) {
+				font-size: 72px;
+			}
+
+			span {
+				font-family: $roboto-thin;
+				font-weight: normal;
+			}
+		}
+
+	}
+
+}
+
+
+
+//
+//// Seções da home
+//
+.section-home {
+	padding: 60px 0;
+	min-height: 500px;
+
+	&-titulo {
+		font-family: $roboto-thin;
+		font-weight: normal;
+		font-size: 42px;
+		margin-bottom: 20px;
+
+		@include break (desk) {
+			font-size: 72px;
+		}
+
+	}
+
+	&-quem-somos {
+		background: $cor-cinza;
+		color: $cor-azul;
+
+	}
+
+	&-noticias {
+		background: $cor-vermelho;
+		color: $cor-branca;
+	}	
+
+	&-projetos {
+		background: $cor-amarelo;
+		color: $cor-branca;
+	}		
+
+	&-vagas {
+		background: $cor-azul;
+		color: $cor-branca;
+	}	
+
+	&-contato {
+		background: $cor-verde;
+		color: $cor-branca;
+	}		
+
+}
+
+
+
+//
+//// Seção - Quem Somos
+//
+.section-home-quem-somos {
+
+	&-icons {
+		text-align: center;
+		margin-top: 60px;
+	}
+
+}
+
+
+
+//
+//// Seção - Notícias
+//
+.section-home-noticias {
+
+	&-list {
+		flex-wrap: wrap;
+		display: flex;
+	}
+
+	&-item {
+		width: 100%;
+		margin: 0 25px 10px 0;
+		background: $cor-vermelho-light;
+		display: flex;
+		flex-direction: column;
+
+		@include break(desk) {
+			width: 23%;
+		}
+
+		p {
+			padding: 10px;
+		}
+	
+		img {
+			width: 100%;
+		}
+
+		time {
+			color: $cor-vermelho-darken;
+		}
+
+		a {
+			color: $cor-branca;
+		}
+
+	}
+
+
+}

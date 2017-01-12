@@ -1,7 +1,74 @@
-/* Helpers */
-$cor-azul: #248dbc;
-$cor-cinza: #ddd;
+//
+//// Variáveis
+//
 $cor-branca: #fff;
+$cor-cinza: #ebebeb;
+$cor-azul: #248dbc;
+$cor-azul-light: lighten($cor-azul, 10);
+$cor-azul-darken: darken($cor-azul, 20);
 $cor-vermelho: #984b4d;
+$cor-vermelho-light: lighten($cor-vermelho, 10);
+$cor-vermelho-darken: darken($cor-vermelho, 20);
 $cor-amarelo: #dac620;
+$cor-amarelo-light: lighten($cor-amarelo, 10);
+$cor-amarelo-darken: darken($cor-amarelo, 20);
 $cor-verde: #75b4aa;
+$cor-verde-light: lighten($cor-verde, 10);
+$cor-verde-darken: darken($cor-verde, 20);
+
+
+//
+//// Fontes
+//
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.woff2')  format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+ @font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+ }
+
+$lato-regular: lato-regular;
+$roboto-regular: roboto-regular, arial, helvetica, verdana, tahoma, sans-serif;
+$roboto-bold: roboto-bold, arial, helvetica, verdana, tahoma, sans-serif;
+$roboto-light: roboto-light, arial, helvetica, verdana, tahoma, sans-serif;
+$roboto-thin: roboto-thin, arial, helvetica, verdana, tahoma, sans-serif;
+
+
+//
+//// Clear´s
+//
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

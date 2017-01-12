@@ -1,8 +1,6 @@
-/* Mixins */
-
-
-// Mixin for breakpoint
-
+//
+//// Breakpoint
+//
 @mixin break($breakpoint) {
  
   @if $breakpoint == "mobile" {
@@ -26,8 +24,12 @@
 }
 
 
+//
+//// Image replace
+//
 @mixin image-replace {
 	text-indent: -9999px;
 	overflow: hidden;
 	background-repeat: no-repeat;
 }
+

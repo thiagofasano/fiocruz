@@ -1,4 +1,6 @@
-/* Base */
+//
+//// Base
+//
 * {
 	margin: 0;
 	padding: 0;
@@ -6,21 +8,30 @@
 }
 
 body {
-	font-family: Arial, Verdana;
+	font-family: $lato-regular;
 	font-size: 16px; 
 	color: #000;
-	background: $cor-cinza;
+	background: $cor-branca;
 }
 
 a {
 	color: #000;
+	text-decoration: none; 
+}
+
+p {
+	margin: 0 0 10px 0;
+	line-height: 23px;
 }
 
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 40px;
 	position: relative;
 	height: inherit;
 }
+
+
+
 

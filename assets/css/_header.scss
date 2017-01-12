@@ -1,15 +1,17 @@
-/* Header */
+//
+//// Header
+//
 .header {
 	background: $cor-branca;
 	height: 150px;
 	position: fixed;
 	width: 100%;
+	z-index: 20;
 
 	.container {
-		padding: 35px 20px;
+		padding-top: 35px;
 	}
 }
-
 
 .logo {
 	@include image-replace;
@@ -19,7 +21,19 @@
 	position: absolute;
 }
 
+.icon-busca {
+	@include image-replace;
+	background: url("../../images/icon-busca.jpg");
+	width: 18px;
+	height: 17px;
+	float: right;
+	margin: 15px 25px;
+}
 
+
+//
+//// Menu principal
+//
 .menu-principal {
 	float: left;
 	margin: 15px 0 0 215px;
@@ -35,33 +49,23 @@
 
 	}
 
-	&--quem-somos a:hover {
+	&-quem-somos a:hover {
 		color: $cor-azul; 
 	}
 
-	&--noticias a:hover {
+	&-noticias a:hover {
 		color: $cor-vermelho; 
 	}	
 
-	&--projetos a:hover {
+	&-projetos a:hover {
 		color: $cor-amarelo; 
 	}
 
-	&--vagas a:hover {
+	&-vagas a:hover {
 		color: $cor-azul; 
 	}	
 
-	&--contato a:hover {
+	&-contato a:hover {
 		color: $cor-verde; 
 	}	
-}
-
-
-.icon-busca {
-	@include image-replace;
-	background: url("../../images/icon-busca.jpg");
-	width: 18px;
-	height: 17px;
-	float: right;
-	margin: 15px 25px;
 }
