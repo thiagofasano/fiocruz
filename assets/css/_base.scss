@@ -27,11 +27,53 @@ p {
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 20px;
 	position: relative;
 	height: inherit;
+
+	@include break(desk) {
+		padding: 0 40px;
+	}
 }
 
 
+footer {
+	height: 100px;
 
+	.container {
+	display: flex;
+	flex-flow: column;
+
+		@include break(desk) {
+		flex-flow: row;
+		}
+	}
+
+	.outros-acessos {
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		width: 50%;
+
+		li {
+			list-style: none;
+			padding: 10px;
+		}
+	}
+
+	.redes-sociais {
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		width: 50%;
+
+			li {
+				list-style: none;
+				padding: 10px;
+			}
+		}
+
+}
 

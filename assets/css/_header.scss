@@ -3,48 +3,99 @@
 //
 .header {
 	background: $cor-branca;
-	height: 150px;
+	height: 75px;
 	position: fixed;
 	width: 100%;
 	z-index: 20;
 
+	@include break(desk) {
+		height: 150px;
+	}
+
 	.container {
+	@include break(desk) {
 		padding-top: 35px;
+	}
+
 	}
 }
 
+//
+//// Header - Menor
+//
+.header-menor {
+	height: 75px;
+
+	.container {
+		padding-top: 0px;
+	}
+}
+
+
 .logo {
 	@include image-replace;
-	background: url("../../images/logo.jpg");
-	width: 200px;
-	height: 72px;
+	background: url("../../images/logo.jpg") no-repeat;
+	width: 195px;
+	height: 60px;
 	position: absolute;
+	margin-top: 7px;
 }
 
 .icon-busca {
-	@include image-replace;
-	background: url("../../images/icon-busca.jpg");
-	width: 18px;
-	height: 17px;
-	float: right;
-	margin: 15px 25px;
+	display: none; 
+		@include image-replace;
+		background: url("../../images/icon-busca.jpg") no-repeat;
+		width: 18px;
+		height: 17px;
+		float: right;
+		margin: 15px 25px;
+
+	@include break(desk) {
+		display: block;
+	}
+
 }
 
 
 //
 //// Menu principal
 //
+
+.menu-mobile {
+	@include image-replace;
+	background: url("../../images/icon-menu-mobile.png") no-repeat;
+	width: 30px;
+	height: 22px;
+	float: right;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @include break(desk) {
+		display: none;
+  }	
+
+}
+
 .menu-principal {
-	float: left;
-	margin: 15px 0 0 215px;
 
-	li {
+	display: none;
+
+	@include break(desk) {
+		
+		display: block;
 		float: left;
-		list-style: none;
-		padding: 10px 15px;
+		margin: 15px 0 0 215px;
 
-		a {
-			text-decoration: none;
+		li {
+			float: left;
+			list-style: none;
+			padding: 10px 15px;
+
+			a {
+				text-decoration: none;
+			}
+
 		}
 
 	}

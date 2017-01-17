@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Fiocruz</title>
 	<link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 
@@ -14,6 +15,8 @@
 		<h1 class="logo"></h1>
 
 		<span class="icon-busca">Busca</span>
+
+		<a href="#" class="menu-mobile" icon-menu="&#9776;">Menu</a>
 
 		<nav>
 			<ul class="menu-principal">
@@ -71,31 +74,31 @@
 
 			<div class="section-home-noticias-item">
 				<a href="#">
-					<img src="images/amostra.jpeg" width="264" height="264">
+					<img src="images/amostra.jpeg">
 					<p><time>11/01/2017</time><br>
-					Subtitulo</p>
+					Subtitulo bem maior que todos os outros 3, será que vai seguir o tamanho ao lado? se seguir será ótimo.</p>
 				</a>
 			</div>
 
 			<div class="section-home-noticias-item">
 				<a href="#">
-					<img src="images/amostra.jpeg" width="264" height="264">
+					<img src="images/amostra.jpeg">
 					<p><time>11/01/2017</time><br>
-					Subtitulo</p>
+					Subtitulo menor</p>
 				</a>
 			</div>
 
 			<div class="section-home-noticias-item">
 				<a href="#">
-					<img src="images/amostra.jpeg" width="264" height="264">
+					<img src="images/amostra.jpeg">
 					<p><time>11/01/2017</time><br>
-					Subtitulo</p>
+					Subtitulo intermediário das opções de notícia</p>
 				</a>
 			</div>
 
 			<div class="section-home-noticias-item">
 				<a href="#">
-					<img src="images/amostra.jpeg" width="264" height="264">
+					<img src="images/amostra.jpeg">
 					<p><time>11/01/2017</time><br>
 					Subtitulo</p>
 				</a>
@@ -110,16 +113,89 @@
 <section class="section-home section-home-projetos">
 
 	<div class="container">
+
 		<h2 class="section-home-titulo">Projetos</h2>
+		
+		<ul class="section-home-projetos-acessos">		
+			<li>
+			<a href="#" class="icon-pesquisador">Tranquilidade para <br> o pesquisador</a></li>
+
+			<li>
+			<a href="#" class="icon-financiador">Segurança para <br> o financiador</a></li>
+
+			<li>
+			<a href="#" class="icon-financiamento">Oportunidades de <br> financiamentos</a></li>
+
+			<li>
+			<a href="#" class="icon-crie">Saiba como <br> criar seu projeto</a></li>
+		</ul>
 
 	</div>
+
+	<div class="section-home-projetos-destaque">
+		<div class="container">
+			<h2 class="section-home-titulo">Galeria de projetos em destaque</h2>
+
+			<div class="section-home-projetos-destaque-list"">
+			
+			<div class="section-home-projetos-destaque-item">
+				<a href="#"><img src="images/projeto-capa.jpg" alt="">
+				<p>Fiocruz pra você: uma semana dedicada à saúde</p></a>
+			</div>
+
+			<div class="section-home-projetos-destaque-item">
+				<a href="#"><img src="images/projeto-capa.jpg" alt="">
+				<p>Novo Centro de Processamento Final</p></a>
+			</div>
+
+			<div class="section-home-projetos-destaque-item">
+				<a href="#"><img src="images/projeto-capa.jpg" alt="">
+				<p>Redes de laboratórios de referência</p></a>
+			</div>
+
+			<div class="section-home-projetos-destaque-item">
+				<a href="#"><img src="images/projeto-capa.jpg" alt="">
+				<p>Fortalecimento institucional de Farmanguinhos</p></a>
+			</div>
+
+			</div>					
+
+		</div>
+	</div>
+
 
 </section>
 
 <section class="section-home section-home-vagas">
 
 	<div class="container">
+
 		<h2 class="section-home-titulo">Vagas</h2>
+
+		<div class="section-home-vagas-status">
+
+			<div class="section-home-vagas-selecao">
+				<h3 class="section-home-titulo">Em Seleção</h3>
+				<ul>
+					<li><a href="#">Médico de Saúde da Família</a></li>
+					<li><a href="#">Médico Plantonista</a></li>
+				</ul>
+			</div>
+
+			<div class="section-home-vagas-analise">
+				<h3 class="section-home-titulo">Em Análise</h3>
+			</div>
+
+			<div class="section-home-vagas-resultados">
+				<h3 class="section-home-titulo">Resultados</h3>
+			</div>
+
+			<div class="section-home-vagas-mais">
+				<span></span>
+				<h3 class="section-home-titulo">Mais processos seletivos</h3>
+			</div>
+
+		</div>
 
 	</div>
 
@@ -129,11 +205,93 @@
 
 	<div class="container">
 		<h2 class="section-home-titulo">Contato</h2>
+		
+		<div class="section-home-contato-inner">
+			
+			<div class="section-home-contato-formulario">
+				<input type="text" placeholder="Nome completo" class="campo-nome">
+				<input type="text" placeholder="E-mail" class="campo-email">
+				<input type="text" placeholder="Assunto" class="campo-assunto">
+
+				<textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
+
+				<button type="submit">Enviar</button>
+			</div>
+
+
+			<div class="section-home-contato-enderecos">
+
+			<div>
+					
+					<p><span>Rio de Janeiro (sede)</span></p>
+
+					<p>Avenida Brasil, 4036 <br>
+					Manguinhos <br>
+					21040-361</p>
+
+					<p><span>E-mail:</span> fiotec@fiotec.fiocruz.br <br>
+					<span>Telefone:</span> +55 21 2209-2600 <br>
+					8h às 17h</p>
+
+					<br>
+
+					<p><span>Brasília (escritório)</span></p>
+
+					<p>Avenida L3 Norte, <br>
+					Campus Universitário Darcy Ribeiro <br>
+					UNB Gleba A, SC4, <br>
+					Edifício Fiocruz - Sala 03 <br>
+					70904-970</p>
+
+					<p><span>Telefone:</span> +55 61 3329-4790 <br>
+					8h30 às 17h30</p>
+
+
+			</div>
+			
+
+
+
+			<div>
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.964993068208!2d-43.243136084466215!3d-22.87775154258852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ebae3d5c573%3A0x41895198919c4732!2sAv.+Brasil%2C+4036+-+Mar%C3%A9%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1477048520420" width="100%" height="200px" style="border: 0;" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+			<br />
+			<br />
+
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.964993068208!2d-43.243136084466215!3d-22.87775154258852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ebae3d5c573%3A0x41895198919c4732!2sAv.+Brasil%2C+4036+-+Mar%C3%A9%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1477048520420" width="100%" height="200px" style="border: 0;" frameborder="0" allowfullscreen="allowfullscreen"></iframe>	
+
+			</div>		
+
+			</div>
+
+		</div>
+
 
 	</div>
 
 </section>
 
+<footer>
+	<div class="container">
+		<ul class="outros-acessos">
+			<li><img src="images/btnFiocruz.png" alt=""></li>
+			<li><img src="images/btnConfies.png" alt=""></li>
+			<li><img src="images/btnAcessoInformacao.png" alt=""></li>
+		</ul>
+
+		<ul class="redes-sociais">
+			<li><img src="images/icon-face.png" alt=""></li>
+			<li><img src="images/icon-inst.png" alt=""></li>
+			<li><img src="images/icon-twitter.png" alt=""></li>
+			<li><img src="images/icon-youtube.png" alt=""></li>
+			<li><img src="images/icon-mail.png" alt=""></li>
+			<li><img src="images/icon-intranet.png" alt=""></li>
+		</ul>		
+	</div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@
   }
 
   @else if $breakpoint == "tablet" {
-    @media (max-width: 992px) {
+    @media (min-width: 768px) {
       @content;
     }
   }
